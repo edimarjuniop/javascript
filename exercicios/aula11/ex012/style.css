@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: burlywood;
+    color: white;
+}
+
+header {
+    font-size: 2em;
+    text-align: center;
+}
+
+main section {
+    background-color: white;
+    color: black;
+    max-width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .5);
+}
+
+img.time-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
