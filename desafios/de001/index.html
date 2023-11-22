@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <main>
+        <form action="">
+            <div>
+                <label for="start">Início:</label>
+                <input type="number" name="start" id="start">
+            </div>
+            <div>
+                <label for="end">Fim:</label>
+                <input type="number" name="end" id="end">
+            </div>
+            <div>
+                <label for="step">Passo:</label>
+                <input type="number" name="step" id="step">
+            </div>
+            <div>
+                <input type="button" value="Contar" id="count" onmousedown="toCount()">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+        <p id="result">Preparando a contagem...</p>
+    </main>
+    <footer>
+        <p>&copy; Edimar Junio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
