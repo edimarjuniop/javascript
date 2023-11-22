@@ -18,7 +18,7 @@
             border-bottom: 1px solid black;
         }
 
-        div.sum-box input[type = button] {
+        div#button input {
             box-sizing: border-box;
             background-color: blue;
             color: white;
@@ -28,7 +28,7 @@
             padding: 10px;
         }
 
-        div.sum-box input[type = button]:hover {
+        div#button input:hover {
             background-color: aqua;
             color: black;
             scale: 1.05;
@@ -38,18 +38,21 @@
 </head>
 <body>
     <h1>Somando Valores</h1>
-        <div class="sum-box">
-            <label for="val1">Valor 01: </label>
-            <input type="number" name="val1" id="val1" placeholder="digite um valor">
-        </div>
-        <div class="sum-box">
-            <label for="val2">Valor 02: </label>
-            <input type="number" name="val2" id="val2" placeholder="digite um valor">
-        </div>
-        <div class="sum-box">
-            <input type="button" value="Somar" id="cal">
-        </div>
-        <div id="res">resultado</div>
+        <form action="">
+            <div class="sum-box">
+                <label for="val1">Valor 01: </label>
+                <input type="number" name="val1" id="val1" placeholder="digite um valor">
+            </div>
+            <div class="sum-box">
+                <label for="val2">Valor 02: </label>
+                <input type="number" name="val2" id="val2" placeholder="digite um valor">
+            </div>
+            <div class="sum-box" id="button">
+                <input type="button" value="Somar" id="cal">
+                <input type="reset" value="Limpar">
+            </div>
+            <div id="res">resultado</div>
+        </form>
 
     <script>
         let cal = document.querySelector('input#cal')
