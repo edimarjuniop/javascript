@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 02</title>
+    <title>Exercício 03</title>
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -11,11 +11,13 @@
     </style>
 </head>
 <body>
-    <p>Bem vindo.</p>
+    <h1>Bem vindo.</h1>
 
     <script>
-        var name = window.prompt('Qual é seu nome?')
-        window.alert('Então seu nome é ' + name + '!')
+        var n1 = Number(window.prompt('Digite um numero:'))
+        var n2 = Number(window.prompt('Digite outro numero:'))
+        var res = n1 + n2
+        window.alert(`A soma de ${n1} + ${n2} é ${res}`) // Templete String
     </script>
 </body>
 </html>
