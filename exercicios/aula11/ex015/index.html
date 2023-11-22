@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            max-width: 400px;
+            height: 600px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, .5);
+            overflow: hidden;
+        }
+
+        main h1 {
+            text-align: center;
+        }
+
+        main img {
+            width: calc(100% + 40px);
+            margin: -20px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        div.form div {
+            margin-bottom: 10px;
+        }
+
+        div.form input {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        div.button {
+            text-align: center;
+        }
+
+        div.button input {
+            width: 128px;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            background-color: rgb(240, 240, 240);
+            box-sizing: border-box;
+        }
+
+        div.button input:hover {
+            border: none;
+            padding: 10px;
+            background-color: rgb(215, 215, 215);
+            scale: 1.05;
+            transition: scale .2s;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <img src="image/sky.jpg" alt="Céu">
+        <h1>Cadastro</h1>
+        <form action="">
+            <div class="form">
+                <div>
+                    <label for="name">Nome*</label> <br>
+                    <input type="text" name="name" id="name" placeholder="Nome Completo" minlength="5" maxlength="30" required>
+                </div>
+                <div>
+                    <label for="email">Email*</label> <br>
+                    <input type="email" name="email" id="email" placeholder="Seu email" minlength="5" maxlength="30" required>
+                </div>
+                <div>
+                    <label for="password">Senha*</label> <br>
+                    <input type="password" name="password" id="password" placeholder="Crie uma Senha" minlength="8" maxlength="16" required>
+                </div>
+                <div>
+                    <label for="password">Comfirmar Senha*</label> <br>
+                    <input type="password" name="password" id="password" placeholder="Corfirmar Senha" minlength="8" maxlength="16" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="button" value="Confirmar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
