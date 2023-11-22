@@ -7,6 +7,25 @@
 </head>
 <body>
     <h1>Sistema de Multas</h1>
-    <input type="number" name="multa" id="multa">
+    <input type="number" name="vel" id="vel">
+    <label for="vel">Km/h</label>
+    <input type="button" value="Verificar" onclick="cal()">
+    <div id="res">
+
+    </div>
+    <script>
+        function cal() {
+            let vel = document.querySelector('input#vel').value
+            let res = document.querySelector('div#res')
+            let speed = Number(vel)
+
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${speed}Km/h</strong>.</p>`
+            
+            if (vel > 60) {
+                res.innerHTML += `<p>Você foi <strong>MULTADO</strong> por excesso de velocidade.</p>`
+            }
+                res.innerHTML += '<p>Dirija sempre com cinto de segurança.</p>'
+        }
+    </script>
 </body>
 </html>
