@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#button {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 8px;
+            background-color: blue;
+            font-weight: bold;
+            color: white;
+            width: 128px;
+            text-align: center;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="button">
+        Interaja...
+    </div>
+
+    <script>
+        var button = document.querySelector('div#button')
+        button.addEventListener('click', toClick)
+        button.addEventListener('mouseenter', toEnter)
+        button.addEventListener('mouseout', toOut)
+
+
+        function toClick() {
+            button.innerText = 'Clicou!!'
+            button.style.backgroundColor = 'white'
+            button.style.color = 'black'
+            button.style.border = '2px dashed black'
+        }
+
+        function toEnter() {
+            button.innerHTML = 'Entrou!'
+            button.style.backgroundColor = 'aquamarine'
+            button.style.color = 'black'
+            button.style.cursor = 'pointer'
+            button.style.border = '1px solid black'
+        }
+
+        function toOut() {
+            button.innerHTML = 'Saiu!'
+            button.style.backgroundColor = 'blue'
+            button.style.color = 'white'
+            button.style.border = '1px solid black'
+        }
+    </script>
+</body>
+</html>

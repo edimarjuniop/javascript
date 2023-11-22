@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+    <style>
+        div.sum-box {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+        <div class="sum-box">
+            <label for="val1">Valor 01 </label>
+            <input type="number" name="val1" id="val1">
+        </div>
+        <div class="sum-box">
+            <label for="val2">Valor 02 </label>
+            <input type="number" name="val2" id="val2">
+        </div>
+        <div class="sum-box">
+            <input type="button" value="Somar" id="cal">
+        </div>
+
+    <script>
+        let cal = document.querySelector('input#cal')
+        cal.addEventListener('click', toClick)
+
+        function toClick() {
+            let n1 = Number(document.querySelector('input#val1').value)
+            let n2 = Number(document.querySelector('input#val2').value)
+            let res = n1 + n2
+            window.alert('O resultado é ' + res)
+        }
+    </script>
+</body>
+</html>
