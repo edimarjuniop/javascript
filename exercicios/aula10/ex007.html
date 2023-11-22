@@ -23,6 +23,7 @@
         <div class="sum-box">
             <input type="button" value="Somar" id="cal">
         </div>
+        <div id="res">resultado</div>
 
     <script>
         let cal = document.querySelector('input#cal')
@@ -31,8 +32,9 @@
         function toClick() {
             let n1 = Number(document.querySelector('input#val1').value)
             let n2 = Number(document.querySelector('input#val2').value)
+            let result = document.querySelector('div#res')
             let res = n1 + n2
-            window.alert('O resultado é ' + res)
+            result.innerHTML = `O resultado de ${n1} + ${n2} é ${res}.`
         }
     </script>
 </body>
