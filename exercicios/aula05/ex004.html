@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <style>
+        * {
+            font: normal 20px Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = window.prompt('Qual é seu nome?')
+        var sal = Number(window.prompt('Qual é seu salário?'))
+        document.write(`Olá, ${name}! Seu nome possui ${name.length} letras.`)
+        document.write(`Seu nome em maiúsculo é ${name.toUpperCase()}.`)
+        document.write(`eu nome em minúsculo é ${name.toUpperCase()}.`)
+        document.write(`Você recebe ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) // Formata número para Real
+    </script>
+</body>
+</html>
