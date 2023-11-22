@@ -9,6 +9,12 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        main {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         div.sum-box {
             margin-bottom: 10px;
         }
@@ -37,22 +43,24 @@
     </style>
 </head>
 <body>
-    <h1>Somando Valores</h1>
-        <form action="">
-            <div class="sum-box">
-                <label for="val1">Valor 01: </label>
-                <input type="number" name="val1" id="val1" placeholder="digite um valor">
-            </div>
-            <div class="sum-box">
-                <label for="val2">Valor 02: </label>
-                <input type="number" name="val2" id="val2" placeholder="digite um valor">
-            </div>
-            <div class="sum-box" id="button">
-                <input type="button" value="Somar" id="cal">
-                <input type="reset" value="Limpar">
-            </div>
-            <div id="res">resultado</div>
-        </form>
+    <main>
+        <h1>Somando Valores</h1>
+            <form action="">
+                <div class="sum-box">
+                    <label for="val1">Valor 01: </label>
+                    <input type="number" name="val1" id="val1" placeholder="digite um valor">
+                </div>
+                <div class="sum-box">
+                    <label for="val2">Valor 02: </label>
+                    <input type="number" name="val2" id="val2" placeholder="digite um valor">
+                </div>
+                <div class="sum-box" id="button">
+                    <input type="button" value="Somar" id="cal">
+                    <input type="reset" value="Limpar">
+                </div>
+                <div id="res">resultado</div>
+            </form>
+    </main>
 
     <script>
         let cal = document.querySelector('input#cal')
