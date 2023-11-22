@@ -19,11 +19,19 @@
         }
 
         div.sum-box input[type = button] {
+            box-sizing: border-box;
             background-color: blue;
             border-radius: 10px;
             border: none;
             width: 128px;
             padding: 10px;
+        }
+
+        div.sum-box input[type = button]:hover {
+            background-color: aqua;
+            color: black;
+            scale: 1.05;
+            transition: scale .2s;
         }
     </style>
 </head>
@@ -51,7 +59,7 @@
             let n2 = Number(document.querySelector('input#val2').value)
             let result = document.querySelector('div#res')
             let res = n1 + n2
-            result.innerHTML = `A soma de ${n1} + ${n2} é ${res}.`
+            result.innerHTML = `A soma de ${n1} + ${n2} é <strong>${res}</strong>.`
         }
     </script>
 </body>
