@@ -27,6 +27,7 @@ main {
 
 div#tab {
     text-align: left;
+    margin-top: 25px;
 }
 
 input[type = number] {
