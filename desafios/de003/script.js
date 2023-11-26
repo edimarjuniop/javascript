@@ -11,6 +11,7 @@ function addList() {
         if (list.indexOf(form.value) == -1) {
             list.push(form.value)
             sel.innerHTML = ''
+            msg.innerHTML = ''
             form.value = null
             for (let i in list) {
                 let item = document.createElement('option')
@@ -27,11 +28,17 @@ function addList() {
 }
 
 function fin() {
+    if (list.length == 0) {
+        alert('A lista esta vazia')
+        return
+    }
     let totalNamber = document.createElement('p')
     let maxNumber = document.createElement('p')
     let minNumber = document.createElement('p')
     let sum = document.createElement('p')
     let average = document.createElement('p')
+
+    msg.innerHTML = ''
 
     list.sort()
 
@@ -46,9 +53,11 @@ function fin() {
     }
 
     sum.innerText = `A soma de todos os números é ${res}.`
-
+    
+    average.innerText = `A media dos valores é ${res / list.length}.`
     msg.appendChild(totalNamber)
     msg.appendChild(maxNumber)
     msg.appendChild(minNumber)
     msg.appendChild(sum)
+    msg.appendChild(average)
 }
